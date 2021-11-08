@@ -114,7 +114,7 @@ def parse_pace(time: str) -> timedelta:
 def lookup_vdot(distance: str, time: timedelta) -> int:
     for vdot, paces in VDOT_TABLE.items():
         for d, t in paces.items():
-            if distance == d and time <= t:
+            if distance == d and time <= parse_time(t):
                 return vdot
     return 0
 
