@@ -7,4 +7,14 @@ from datetime import timedelta
 #   |_|\__,_|_.__/|_|\___| |____(_)_|
 #  FIGLET: Table 5.1
 #
-VDOT_TABLE = {'30': {'5k': timedelta(minutes=30, seconds=40)}}
+VDOT_TABLE = {38: {'5k': timedelta(minutes=25, seconds=12)}}
+
+PACE_TABLE = {
+    38: {
+        'E': {'min': '9:56', 'max': '11:06'},
+        'M': '9:15',
+        'T': {'400': '2:07', 'km': '5:19', 'mile': '8:33'},
+        'I': {'400': '1:56', 'km': '4:54', 'mile': None},
+        'R': {'200': '0:54', '400': '1:48'},
+    }
+}
